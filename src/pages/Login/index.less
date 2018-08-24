@@ -1,0 +1,134 @@
+.login {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  .l-logo {
+    width: 210px;
+    height: 301px;
+    margin: 140px 0 60px; /*px*/
+    background: url(../../assets/images/login/login-bg.png) center center no-repeat;
+    background-size: contain;
+  }
+  .row {
+    display: flex;
+    width: 600px;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    .icon {
+      width: 50px;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
+    .icon-phone {
+      background-image: url(../../assets/images/login/phone-icon.png);
+      background-size: 33px 45px;/*px*/
+    }
+    .icon-lock {
+      background-image: url(../../assets/images/login/lock-icon.png);
+      background-size: 35px 41px;/*px*/
+    }
+    .ipt {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      position: relative;
+      input {
+        flex: 1;
+        height: 50px;
+        padding-right: 180px;
+        line-height: 50px;
+        font-size: 30px;
+        color: #a4a4a4;
+      }
+    }
+    .getCode {
+      position: absolute;
+      right: 0;
+      height: 50px;
+      padding: 0 20px;
+      font-size: 26px;
+      color: #fe7737;
+      border-radius: 25px;
+      border: 1px solid #fe7737;/*no*/
+      background-color: #fff;
+    }
+    .sureBtn {
+      width: 100%;
+      height: 100%;
+      border-radius: 45px;
+      font-size: 36px;
+      color: #fff;
+      background-color: #ff7031;
+    }
+    .link-ques,.link-register {
+      font-size: 26px;
+    }
+    .link-ques {
+      color: #a4a4a4;
+    }
+    .link-register {
+      color: #ff7031;
+    }
+  }
+}
+
+
+.mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0,0,0,.6);
+  &.block {
+    display: block;
+  }
+}
+.m-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(300px);
+  background-color: #fff;
+  border-radius: 20px 20px 0 0;/*px*/
+  opacity: 0;
+  transition: opacity .2s ease-in-out, transform .15s linear;
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 31px;
+    height: 31px;
+    background: url(../../assets/images/login/close.png) center center no-repeat;
+    background-size: contain;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+  .l-span {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    line-height: 98px;
+  }
+  .reset {
+    font-size: 32px;
+    color: #fff;
+    background-color: #ff7031;
+  }
+}

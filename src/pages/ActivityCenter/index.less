@@ -1,0 +1,97 @@
+.acenter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ecf0f1;
+  .wrapper {
+    height: 100%;
+    overflow: hidden;
+  }
+  .banner{
+    height: 362px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .acti-list {
+    & > .title {
+      display: flex;
+      padding: 28px 30px 10px;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #fff;
+      h3 {
+        padding-left: 12px;
+        font-size: 32px;
+        font-weight: bold;
+        color: #333;
+        border-left: 5px solid #ff6633;
+      }
+      a {
+        color: #666;
+        font-size: 22px;
+      }
+    }
+  }
+
+  .bm-pop {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .pop-content {
+      width: 632px;
+      padding: 50px 30px 60px;
+      border-radius: 10px;
+      position: relative;
+      .title {
+        padding-bottom: 25px;
+        font-size: 32px;
+        color: #333;
+        text-align: center;
+      }
+      li {
+        display: flex;
+        margin-bottom: 15px;
+        font-size: 24px;
+        color: #333;
+        span {
+          line-height: 35px;
+        }
+        .tit {
+          width: 35px;
+        }
+        .txt {
+          flex: 1;
+        }
+      }
+      .submit {
+        display: block;
+        width: 580px;
+        height: 80px;
+        margin: 180px auto 0;
+        line-height: 80px;
+        text-align: center;
+        font-size: 30px;
+        color: #f9f9f9;
+        border-radius: 10px;
+        background-color: #ff6633;
+      }
+      .close {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        bottom: -90px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url(../../assets/images/activitycenter/close-cir.png) center center no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}

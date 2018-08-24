@@ -1,0 +1,258 @@
+.i-center {
+  min-height: 100vh;
+  background-color: #ecf0f1;
+  .banner {
+    display: flex;
+    height: 300px;
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    background: url(../../assets/images/inforcenter/banner.png) center center no-repeat;
+    background-size: 100% 100%;
+    .infor {
+      padding: 0 15px;
+      margin-bottom: 13px;
+      line-height: 46px;
+      font-size: 24px;
+      color: #333;
+      border-radius: 23px;
+      background-color: #fff;
+    }
+    .upload-box {
+      width: 130px;
+      height: 130px;
+      position: relative;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        border-radius: 50%;
+      }
+      .c-mask {
+        width: 130px;
+        height: 30px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0,0,0,.6) url(../../assets/images/inforcenter/camera-icon.png) center center no-repeat;
+        background-size: 20px 17px;
+        z-index: 1;
+      }
+      input[type=file] {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        opacity: 0;
+      }
+    }
+    .stu-info {
+      display: flex;
+      margin-top: 6px;
+      align-items: center;
+      font-size: 26px;
+      color: #fff;
+      .sex-icon {
+        width: 30px;
+        height: 30px;
+        margin-left: 6px;
+        border-radius: 50%;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .female-icon {
+        background-image: url(../../assets/images/inforcenter/female-icon.png);
+        background-size: 15px 22px;
+      }
+      .male-icon {
+        background-image: url(../../assets/images/inforcenter/male-icon.png);
+        background-size: 15px 22px;
+      }
+    }
+  }
+  .p-i-nav {
+    padding-bottom: 32px;
+    ul {
+      display: flex;
+      padding: 0 30px;
+      flex-wrap: wrap;
+      li {
+        width: 25%;
+        padding-top: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 24px;
+        color: #333;
+        &:nth-child(4n+1) {
+          align-items: flex-start;
+        }
+        &:nth-child(4n+2) {
+          padding-right: 22px;
+        }
+         &:nth-child(4n+3) {
+          padding-left: 22px;
+        }
+        &:nth-child(4n) {
+          align-items: flex-end;
+        }
+        .item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      .active {
+        .icon-gg + span {
+          color: #ffca03;
+        }
+        .icon-ccenter + span {
+          color: #8ac17a;
+        }
+        .icon-scenter + span {
+          color: #fb7562;
+        }
+        .icon-bm + span {
+          color: #f6974f;
+        }
+      }
+      .icon {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 9px;
+        border-radius: 50%;
+        &:after {
+          content: '';
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+      .icon-gg {
+        background: #ffca03;
+        &:after {
+          width: 44px;
+          height: 44px;
+          background-image: url(../../assets/images/index/list-1-icon.png);
+        }
+      }
+      .icon-ccenter {
+        background: #8ac17a;
+        &:after {
+          width: 61px;
+          height: 47px;
+          background-image: url(../../assets/images/index/list-2-icon.png);
+        }
+      }
+      .icon-scenter {
+        background: #fb7562;
+        &:after {
+          width: 46px;
+          height: 50px;
+          background-image: url(../../assets/images/index/list-3-icon.png);
+        }
+      }
+      .icon-bm {
+        background: #f6974f;
+        &:after {
+          width: 45px;
+          height: 50px;
+          background-image: url(../../assets/images/index/list-4-icon.png);
+        }
+      }
+    }
+  }
+  .i-c-cont {
+    .title {
+      padding: 0 30px;
+      line-height: 70px;
+      font-size: 30px;
+      color: #333;
+      background-color: #fff;
+      position: relative;
+      .link-icon {
+        position: absolute;
+        top: 55px;
+        width: 20px;
+        height: 53px;
+        background: url(../../assets/images/inforcenter/link-icon.png) center center no-repeat;
+        background-size: 100% 100%;
+      }
+      .icon1 {
+        left: 70px;
+      }
+      .icon2 {
+        right: 70px;
+      }
+    }
+    .row {
+      display: flex;
+      padding: 45px 30px 40px;
+      background-color: #fff;
+      .icon {
+        width: 80px;
+        height: 80px;
+        background-repeat: no-repeat;
+        background-position: top left;
+      }
+      .kctx-icon {
+        background-image: url(../../assets/images/inforcenter/kctx-icon.png);
+        background-size: 59px 59px;
+      }
+      .xytz-icon {
+        background-image: url(../../assets/images/inforcenter/notice-icon.png);
+        background-size: 79px 71px;
+      }
+      .ddtz-icon {
+        background-image: url(../../assets/images/inforcenter/ddtz-icon.png);
+        background-size: 60px 60px;
+      }
+      .rwcl-icon {
+        background-image: url(../../assets/images/inforcenter/rwcl-icon.png);
+        background-size: 53px 70px;
+      }
+      .cont {
+        flex: 1;
+        p {
+          &:first-child {
+            display: flex;
+            margin-bottom: 12px;
+            justify-content: space-between;
+            align-items: center;
+          }
+          &:last-child {
+            font-size: 26px;
+            line-height: 32px;
+            color: #666;
+          }
+        }
+        .tit {
+          display: flex;
+          align-items: center;
+          font-size: 30px;
+          color: #333;
+        }
+        .warnning {
+          height: 30px;
+          padding: 0 12px;
+          margin-left: 20px;
+          line-height: 30px;
+          border-radius: 15px;
+          font-size: 20px;
+          color: #fff;
+          background-color: #f24041;
+        }
+        .time {
+          font-size: 24px;
+          color: #999;
+        }
+      }
+    }
+  }
+}
